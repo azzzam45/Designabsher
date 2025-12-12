@@ -1,25 +1,9 @@
 'use client'
 
-import { useState } from "react";
 import Image from "next/image";
-import { ChevronDown, ChevronUp } from "lucide-react";
-
-interface PaymentBalance {
-  category: string;
-  amount: number;
-}
 
 export function PaymentDashboard() {
-  const [isExpanded, setIsExpanded] = useState(true);
-
-  // Example payment balances by category
-  const paymentBalances: PaymentBalance[] = [
-    { category: 'رصيد المرور', amount: 150.00 },
-    { category: 'رصيد الجوازات', amount: 100.00 },
-    { category: 'رصيد الأحوال المدنية', amount: 50.00 },
-  ];
-
-  const totalBalance = paymentBalances.reduce((sum, item) => sum + item.amount, 0);
+  const totalBalance = 300.00;
 
   return (
     <div className="mx-5 bg-white rounded-[24px] shadow-sm p-5 mb-5" dir="rtl">
@@ -47,41 +31,6 @@ export function PaymentDashboard() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Detailed Balance Section */}
-      <div>
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full flex items-center justify-between mb-3"
-        >
-          <h4 className="text-[14px] text-[#1E7C6F] font-medium">الرصيد التفصيلي</h4>
-          {isExpanded ? (
-            <ChevronUp className="w-4 h-4 text-[#1E7C6F]" />
-          ) : (
-            <ChevronDown className="w-4 h-4 text-[#1E7C6F]" />
-          )}
-        </button>
-
-        {isExpanded && (
-          <div className="space-y-0">
-            {paymentBalances.map((item, index) => (
-              <div
-                key={index}
-                className={`flex items-center justify-between py-3 ${
-                  index !== paymentBalances.length - 1 ? 'border-b border-gray-100' : ''
-                }`}
-              >
-                <span className="text-[14px] text-gray-700">{item.category}</span>
-                <div className="flex items-center gap-1.5">
-                  <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={12} height={14} className="w-3 h-3.5 object-contain mix-blend-multiply opacity-70" unoptimized />
-                  <span className="text-[14px] text-gray-700">{item.amount.toFixed(0)}</span>
-                  <span className="text-[12px] text-gray-500">ر.س</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
 
       {/* Recent Transactions Section */}
