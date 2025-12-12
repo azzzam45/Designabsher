@@ -2,6 +2,7 @@
 
 import { ProfileHeader } from "@/components/ProfileHeader";
 import { WalletCard } from "@/components/WalletCard";
+import { PaymentDashboard } from "@/components/PaymentDashboard";
 import { DigitalDocuments } from "@/components/DigitalDocuments";
 import { QuickAccess } from "@/components/QuickAccess";
 import { BottomNavigation } from "@/components/BottomNavigation";
@@ -159,6 +160,9 @@ export default function Home() {
 
           {/* Wallet Card */}
           <WalletCard balance={walletBalance} />
+
+          {/* Payment Dashboard */}
+          <PaymentDashboard />
 
           {/* Digital Documents Section */}
           <DigitalDocuments />
