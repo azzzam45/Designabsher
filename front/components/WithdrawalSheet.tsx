@@ -2,6 +2,7 @@
 
 import { X, AlertCircle, Building2, CheckCircle2, Shield, Clock, ArrowDownToLine } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 interface WithdrawalSheetProps {
   isOpen: boolean;
@@ -122,7 +123,7 @@ export function WithdrawalSheet({ isOpen, onClose }: WithdrawalSheetProps) {
                       <p className="text-[12px] text-[#1E7C6F]/70">الرصيد المتاح للسحب</p>
                     </div>
                     <div className="flex items-center justify-end gap-2">
-                      <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-6 h-7 object-contain mix-blend-multiply opacity-60" />
+                      <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={24} height={28} className="w-6 h-7 object-contain mix-blend-multiply opacity-60" unoptimized />
                       <span className="text-[32px] text-[#1E7C6F]">{availableBalance.toFixed(2)}</span>
                     </div>
                   </div>
@@ -165,7 +166,7 @@ export function WithdrawalSheet({ isOpen, onClose }: WithdrawalSheetProps) {
                       className="w-full bg-gradient-to-br from-[#F5F5F5] to-[#FAFAFA] rounded-[20px] px-5 py-5 text-right text-[24px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#1E7C6F]/30 focus:shadow-lg transition-all"
                     />
                     <div className="absolute left-5 top-1/2 -translate-y-1/2">
-                      <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-5 h-6 object-contain mix-blend-multiply opacity-50" />
+                      <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={20} height={24} className="w-5 h-6 object-contain mix-blend-multiply opacity-50" unoptimized />
                     </div>
                   </div>
                   
@@ -234,7 +235,7 @@ export function WithdrawalSheet({ isOpen, onClose }: WithdrawalSheetProps) {
                   <div className="bg-gradient-to-br from-[#F5F5F5] to-[#FAFAFA] rounded-[24px] p-5 mb-4 space-y-4 shadow-sm">
                     <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                       <div className="flex items-center gap-2">
-                        <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-4 h-5 object-contain mix-blend-multiply opacity-70" />
+                        <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={16} height={20} className="w-4 h-5 object-contain mix-blend-multiply opacity-70" unoptimized />
                         <span className="text-[16px] text-gray-900">{parseFloat(amount).toFixed(2)}</span>
                       </div>
                       <span className="text-[13px] text-gray-600">المبلغ</span>

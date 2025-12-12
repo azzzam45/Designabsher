@@ -1,6 +1,7 @@
 'use client'
 
 import { User, Bell, Grid3x3, Book, Share2, LogIn } from "lucide-react";
+import Image from "next/image";
 
 interface DesktopTopNavProps {
   onNotificationClick: () => void;
@@ -13,10 +14,13 @@ export function DesktopTopNav({ onNotificationClick }: DesktopTopNavProps) {
         <div className="flex items-center justify-between">
           {/* Right - Vision 2030 */}
           <div className="flex items-center">
-            <img 
+            <Image 
               src="/assets/fda363a41951d8f8db100b0d2dc87beb2ca66465.png"
               alt="رؤية 2030" 
+              width={100}
+              height={48}
               className="h-12 object-contain"
+              unoptimized
             />
           </div>
 
@@ -58,7 +62,7 @@ export function DesktopTopNav({ onNotificationClick }: DesktopTopNavProps) {
 
           {/* Left - Ministry Logo */}
           <div className="flex items-center gap-4">
-            <img src="/assets/59146a0de59733b1b8e18bea395729bf235530c3.png" alt="وزارة الداخلية" className="h-14 w-14 object-contain" />
+            <Image src="/assets/59146a0de59733b1b8e18bea395729bf235530c3.png" alt="وزارة الداخلية" width={56} height={56} className="h-14 w-14 object-contain" unoptimized />
           </div>
         </div>
       </div>

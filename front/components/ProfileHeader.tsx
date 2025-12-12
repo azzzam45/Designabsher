@@ -1,6 +1,7 @@
 'use client'
 
 import { Bell, Settings, ChevronLeft } from "lucide-react";
+import Image from "next/image";
 
 interface ProfileHeaderProps {
   onNotificationClick?: () => void;
@@ -56,10 +57,14 @@ export function ProfileHeader({ onNotificationClick }: ProfileHeaderProps) {
       {/* Profile Card */}
       <div className="mx-5 bg-white rounded-[24px] shadow-sm p-4 flex items-center justify-between mb-5">
         <div className="w-[58px] h-[58px] rounded-[18px] overflow-hidden bg-gray-100 flex-shrink-0">
-          <img 
+          <Image 
             src="/assets/0642d415cbb71d7b958ef3c986259478afe852ca.png"
             alt="Profile"
+            width={58}
+            height={58}
             className="w-full h-full object-cover"
+            unoptimized
+            priority
           />
         </div>
         

@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 interface PaymentSheetProps {
   isOpen: boolean;
@@ -107,7 +108,7 @@ export function PaymentSheet({ isOpen, onClose, isDesktop = false }: PaymentShee
                   className="w-full bg-[#F5F5F5] rounded-[16px] px-4 py-4 text-right text-[18px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#1E7C6F]/20 transition-all"
                 />
                 <div className="absolute left-4 top-1/2 -translate-y-1/2">
-                  <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-4 h-5 object-contain mix-blend-multiply opacity-70" />
+                  <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={16} height={20} className="w-4 h-5 object-contain mix-blend-multiply opacity-70" unoptimized />
                 </div>
               </div>
             </div>

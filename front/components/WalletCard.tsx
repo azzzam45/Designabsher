@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import Image from "next/image";
 import { PaymentSheet } from "./PaymentSheet";
 import { WithdrawalSheet } from "./WithdrawalSheet";
 
@@ -30,7 +31,7 @@ export function WalletCard({ balance }: { balance: number }) {
           <p className="text-[12px] text-gray-600 mb-1 text-right">الرصيد المتاح</p>
           <div className="flex items-center justify-end gap-2">
             {/* Saudi Riyal Symbol */}
-            <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-5 h-6 object-contain mix-blend-multiply opacity-70" />
+            <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={20} height={24} className="w-5 h-6 object-contain mix-blend-multiply opacity-70" unoptimized />
             <span className="text-[28px] text-[#1E7C6F]" suppressHydrationWarning>{balance.toFixed(2)}</span>
           </div>
         </div>

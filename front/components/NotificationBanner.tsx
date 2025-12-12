@@ -2,6 +2,7 @@
 
 import { CheckCircle, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface NotificationBannerProps {
   isVisible: boolean;
@@ -79,7 +80,7 @@ export function NotificationBanner({ isVisible, onClose, message, source, amount
                 {amount && (
                   <div className="flex items-center gap-2 mt-2 pt-2 border-t border-gray-100">
                     <div className="flex items-center gap-1.5 px-3 py-1.5 bg-[#E8F5F1] rounded-full">
-                      <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-3.5 h-4 object-contain mix-blend-multiply opacity-60" />
+                      <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={14} height={16} className="w-3.5 h-4 object-contain mix-blend-multiply opacity-60" unoptimized />
                       <span className="text-[13px] text-[#1E7C6F]">{amount.toFixed(2)}</span>
                     </div>
                     <span className="text-[11px] text-gray-500">تم الإضافة</span>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import Image from "next/image";
 import { ChevronRight, CreditCard, Wallet, CheckCircle2, Download, ArrowRight, Calendar } from "lucide-react";
 
 interface DriverLicenseRenewalProps {
@@ -114,7 +115,7 @@ export function DriverLicenseRenewal({ onBack, walletBalance, onPaymentComplete 
                 <div className="flex items-center justify-between py-3">
                   <span className="text-[14px] text-gray-500">المبلغ المطلوب</span>
                   <div className="flex items-center gap-2">
-                    <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-4 h-5 object-contain mix-blend-multiply opacity-70" />
+                    <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={16} height={20} className="w-4 h-5 object-contain mix-blend-multiply opacity-70" unoptimized />
                     <span className="text-[20px] text-[#1E7C6F]">{serviceAmount.toFixed(2)}</span>
                   </div>
                 </div>
@@ -185,7 +186,7 @@ export function DriverLicenseRenewal({ onBack, walletBalance, onPaymentComplete 
               <div className="bg-gradient-to-br from-[#E8F5F1] to-[#D1EDE6] rounded-[16px] p-3">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-4 h-5 object-contain mix-blend-multiply opacity-70" />
+                    <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={16} height={20} className="w-4 h-5 object-contain mix-blend-multiply opacity-70" unoptimized />
                     <span className="text-[18px] text-[#1E7C6F]" suppressHydrationWarning>{walletBalance.toFixed(2)}</span>
                   </div>
                   <span className="text-[12px] text-gray-600">الرصيد المتاح</span>
@@ -336,7 +337,7 @@ export function DriverLicenseRenewal({ onBack, walletBalance, onPaymentComplete 
                 <div className="flex items-center justify-between py-3">
                   <span className="text-[14px] text-gray-500">المبلغ الإجمالي</span>
                   <div className="flex items-center gap-2">
-                    <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-4 h-5 object-contain mix-blend-multiply opacity-70" />
+                    <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={16} height={20} className="w-4 h-5 object-contain mix-blend-multiply opacity-70" unoptimized />
                     <span className="text-[20px] text-[#1E7C6F]">{serviceAmount.toFixed(2)}</span>
                   </div>
                 </div>
@@ -348,7 +349,7 @@ export function DriverLicenseRenewal({ onBack, walletBalance, onPaymentComplete 
               <div className="bg-gradient-to-br from-[#E8F5F1] to-[#D1EDE6] rounded-[20px] p-4 mb-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-4 h-5 object-contain mix-blend-multiply opacity-70" />
+                    <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={16} height={20} className="w-4 h-5 object-contain mix-blend-multiply opacity-70" unoptimized />
                     <span className="text-[18px] text-[#1E7C6F]" suppressHydrationWarning>{(walletBalance - serviceAmount).toFixed(2)}</span>
                   </div>
                   <span className="text-[12px] text-gray-600">الرصيد بعد الدفع</span>
@@ -416,7 +417,7 @@ export function DriverLicenseRenewal({ onBack, walletBalance, onPaymentComplete 
                 <div className="flex items-center justify-between py-3 border-b border-gray-100">
                   <span className="text-[14px] text-gray-500">المبلغ المدفوع</span>
                   <div className="flex items-center gap-2">
-                    <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-4 h-5 object-contain mix-blend-multiply opacity-70" />
+                    <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={16} height={20} className="w-4 h-5 object-contain mix-blend-multiply opacity-70" unoptimized />
                     <span className="text-[18px] text-[#1E7C6F]">{serviceAmount.toFixed(2)}</span>
                   </div>
                 </div>
@@ -453,7 +454,7 @@ export function DriverLicenseRenewal({ onBack, walletBalance, onPaymentComplete 
                 <div className="text-center mb-2">
                   <p className="text-[12px] text-gray-600 mb-1">رصيد المحفظة الحالي</p>
                   <div className="flex items-center justify-center gap-2">
-                    <img src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" className="w-5 h-6 object-contain mix-blend-multiply opacity-70" />
+                    <Image src="/assets/c1791bbb598133efcf5af7c631286ebd88fbce63.png" alt="﷼" width={20} height={24} className="w-5 h-6 object-contain mix-blend-multiply opacity-70" unoptimized />
                     <span className="text-[28px] text-[#1E7C6F]" suppressHydrationWarning>{(walletBalance - serviceAmount).toFixed(2)}</span>
                   </div>
                 </div>
