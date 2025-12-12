@@ -1,11 +1,30 @@
+# Absher Project
 
-  # Mobile UI Design Absher
+This project contains the frontend application for Mobile UI Design Absher.
 
-  This is a code bundle for Mobile UI Design Absher. The original project is available at https://www.figma.com/design/YAwQju73qbiQfvWKLJH2rC/Mobile-UI-Design-Absher.
+## Project Structure
 
-  ## Running the code
+```
+Absher/
+├── front/              # Next.js frontend application
+│   ├── app/           # Next.js App Router
+│   ├── components/    # React components
+│   ├── lib/          # Utility functions
+│   └── public/       # Static assets
+└── README.md         # This file
+```
 
-  Run `npm i` to install the dependencies.
+## Getting Started
 
-  Run `npm run dev` to start the development server.
-  
+All frontend commands should be run from the `front/` directory:
+
+```bash
+cd front
+npm install
+npm run dev
+```
+
+**Important:** Make sure you're in the `front/` directory before running npm commands. The `package.json` is located in `front/package.json`.
+
+See `front/README.md` for detailed frontend documentation.
+
