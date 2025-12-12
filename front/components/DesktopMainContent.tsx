@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { PaymentSheet } from "./PaymentSheet";
 import { WithdrawalSheet } from "./WithdrawalSheet";
+import { PaymentDashboard } from "./PaymentDashboard";
 
 interface DesktopMainContentProps {
   onServiceClick?: (service: string) => void;
@@ -145,6 +146,11 @@ export function DesktopMainContent({ onServiceClick, walletBalance = 2450.00 }: 
                 />
               </div>
             </div>
+          </div>
+
+          {/* Payment Dashboard - Directly under wallet */}
+          <div className="mb-6">
+            <PaymentDashboard />
           </div>
 
           {/* Quick Access Services */}
