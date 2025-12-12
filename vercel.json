@@ -3,5 +3,7 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "rootDirectory": "front"
+  "rootDirectory": "front",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./front"
 }
+
