@@ -1,6 +1,6 @@
 # Absher Project
 
-This project contains the frontend application for Mobile UI Design Absher.
+Frontend application for the Absher platform, built with Next.js 14+ App Router.
 
 ## Project Structure
 
@@ -14,9 +14,9 @@ Absher/
 └── README.md         # This file
 ```
 
-## Getting Started
+## Quick Start
 
-All frontend commands should be run from the `front/` directory:
+All commands should be run from the `front/` directory:
 
 ```bash
 cd front
@@ -24,7 +24,10 @@ npm install
 npm run dev
 ```
 
-**Important:** Make sure you're in the `front/` directory before running npm commands. The `package.json` is located in `front/package.json`.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-See `front/README.md` for detailed frontend documentation.
+> **Note:** The `package.json` is located in `front/package.json`.
 
+## Documentation
+
+See [front/README.md](./front/README.md) for detailed frontend documentation.

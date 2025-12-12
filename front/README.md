@@ -1,53 +1,28 @@
-# Mobile UI Design Absher - Next.js
+# Absher Frontend - Next.js
 
-This is a Next.js 14+ application for Mobile UI Design Absher. The original design is available at [Figma](https://www.figma.com/design/YAwQju73qbiQfvWKLJH2rC/Mobile-UI-Design-Absher).
+Next.js 14+ application for the Absher platform with mobile and desktop layouts.
+
+**Design:** [Figma](https://www.figma.com/design/YAwQju73qbiQfvWKLJH2rC/Mobile-UI-Design-Absher)
 
 ## Tech Stack
 
 - **Next.js 14+** - React framework with App Router
 - **TypeScript** - Type-safe development
 - **Tailwind CSS** - Utility-first CSS framework
-- **Radix UI** - Accessible component primitives
+- **Radix UI** - Accessible components
 - **Lucide React** - Icon library
-
-## Project Structure
-
-```
-front/
-├── app/                    # Next.js App Router pages and layouts
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Home page
-│   ├── globals.css        # Global styles
-│   ├── payments/          # Payments route
-│   └── driver-license/    # Driver license route
-├── components/            # Reusable React components
-│   └── ui/               # shadcn/ui components
-├── lib/                  # Utility functions
-└── public/               # Static assets
-```
 
 ## Getting Started
 
-### Install Dependencies
-
 ```bash
+# Install dependencies
 npm install
-```
 
-### Run Development Server
-
-```bash
+# Run development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
@@ -56,10 +31,20 @@ npm start
 - `npm start` - Start production server
 - `npm run lint` - Run ESLint
 
+## Project Structure
+
+```
+front/
+├── app/              # Next.js App Router (pages, layouts)
+├── components/       # React components
+├── lib/             # Utility functions
+└── public/          # Static assets
+```
+
 ## Features
 
 - 📱 Responsive mobile and desktop layouts
 - 🎨 Modern UI with Tailwind CSS
-- ♿ Accessible components with Radix UI
-- 🚀 Optimized with Next.js 14+ App Router
-- 📦 Type-safe with TypeScript
+- 💳 Electronic wallet and payments
+- 📄 Government services integration
+- ♿ Accessible components
